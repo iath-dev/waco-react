@@ -1,7 +1,10 @@
 // Dependencias de firebase, habilitar solo después de ingresar las variable de entorno
-import * as firebase from 'firebase'
+// import * as firebase from 'firebase'
+import firebase from 'firebase/app'
 import 'firebase/storage'
 import 'firebase/auth'
+import 'firebase/firestore'
+import 'firebase/functions'
 import firebaseConfig from './config'
 
 // Objeto de Firebase
