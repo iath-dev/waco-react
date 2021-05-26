@@ -44,19 +44,19 @@ const ProductView = () => {
             <DialogContent>
                 <FormControl required fullWidth margin="dense">
                     <InputLabel htmlFor="product-edit-name">Nombre</InputLabel>
-                    <Input fullWidth autoComplete="off" id="product-edit-name" defaultValue={product.name} name="name" onChange={handleChange} />
+                    <Input fullWidth autoComplete="off" id="product-edit-name" value={data.name} defaultValue={product.name} name="name" onChange={handleChange} />
                 </FormControl>
                 <FormControl required fullWidth margin="dense">
                     <InputLabel htmlFor="product-edit-description">Descripción</InputLabel>
-                    <Input fullWidth multiline rows={3} rowsMax={3} autoComplete="off" id="product-edit-description" defaultValue={product.description} name="description" onChange={handleChange} />
+                    <Input fullWidth multiline rows={3} rowsMax={3} autoComplete="off" id="product-edit-description" value={data.description} defaultValue={product.description} name="description" onChange={handleChange} />
                 </FormControl>
                 <FormControl required fullWidth margin="dense">
                     <InputLabel htmlFor="product-edit-stock">Inventario</InputLabel>
-                    <Input startAdornment={<Store />} fullWidth autoComplete="off" type="number" inputProps={{ min: 0 }} id="product-edit-stock" defaultValue={product.stock} name="stock" onChange={handleChange} />
+                    <Input startAdornment={<Store />} fullWidth autoComplete="off" type="number" inputProps={{ min: 0 }} id="product-edit-stock" value={data.stock} defaultValue={product.stock} name="stock" onChange={handleChange} />
                 </FormControl>
                 <FormControl required fullWidth margin="dense">
                     <InputLabel htmlFor="product-edit-price">Precio</InputLabel>
-                    <Input startAdornment={<MonetizationOn />} fullWidth autoComplete="off" type="number" inputProps={{ min: 0 }} id="product-edit-price" defaultValue={product.price} name="price" onChange={handleChange} />
+                    <Input startAdornment={<MonetizationOn />} fullWidth autoComplete="off" type="number" inputProps={{ min: 0 }} id="product-edit-price" value={data.price} defaultValue={product.price} name="price" onChange={handleChange} />
                 </FormControl>
             </DialogContent>
             <DialogActions>
@@ -69,19 +69,19 @@ const ProductView = () => {
             <Typography variant="h6">Editar Producto</Typography>
             <FormControl required fullWidth margin="dense">
                 <InputLabel htmlFor="product-edit-name">Nombre</InputLabel>
-                <Input fullWidth autoComplete="off" id="product-edit-name" defaultValue={product.name} name="name" onChange={handleChange} />
+                <Input fullWidth autoComplete="off" id="product-edit-name" value={data.name} defaultValue={product.name} name="name" onChange={handleChange} />
             </FormControl>
             <FormControl required fullWidth margin="dense">
                 <InputLabel htmlFor="product-edit-description">Descripción</InputLabel>
-                <Input fullWidth multiline rows={3} rowsMax={3} autoComplete="off" id="product-edit-description" defaultValue={product.description} name="description" onChange={handleChange} />
+                <Input fullWidth multiline rows={3} rowsMax={3} autoComplete="off" id="product-edit-description" value={data.description} defaultValue={product.description} name="description" onChange={handleChange} />
             </FormControl>
             <FormControl required fullWidth margin="dense">
                 <InputLabel htmlFor="product-edit-stock">Inventario</InputLabel>
-                <Input startAdornment={<Store />} fullWidth autoComplete="off" type="number" inputProps={{ min: 0 }} id="product-edit-stock" defaultValue={product.stock} name="stock" onChange={handleChange} />
+                <Input startAdornment={<Store />} fullWidth autoComplete="off" type="number" inputProps={{ min: 0 }} id="product-edit-stock" value={data.stock} defaultValue={product.stock} name="stock" onChange={handleChange} />
             </FormControl>
             <FormControl required fullWidth margin="dense">
                 <InputLabel htmlFor="product-edit-price">Precio</InputLabel>
-                <Input startAdornment={<MonetizationOn />} fullWidth autoComplete="off" type="number" inputProps={{ min: 0 }} id="product-edit-price" defaultValue={product.price} name="price" onChange={handleChange} />
+                <Input startAdornment={<MonetizationOn />} fullWidth autoComplete="off" type="number" inputProps={{ min: 0 }} id="product-edit-price" value={data.price} defaultValue={product.price} name="price" onChange={handleChange} />
             </FormControl>
             <Divider className={classes.divider} />
             <ButtonGroup size="small" color="primary" variant="outlined">
