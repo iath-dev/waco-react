@@ -17,7 +17,12 @@ const ProductView = () => {
     const classes = useStyles()
     const { product, onEditProduct, onDeleteProduct, onClearSelection } = useContext(ProductContext)
     const matches = useMediaQuery('(max-width:960px)');
-    const [data, setData] = useState(product)
+    const [data, setData] = useState({
+        name: product?.name,
+        description: product?.description,
+        stock: product?.stock,
+        price: product?.price
+    })
 
     const editProduct = () => {
         onEditProduct(data)
